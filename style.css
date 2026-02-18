@@ -13,7 +13,7 @@
   --accent2:     #06b6d4;
   --accent-glow: rgba(59,130,246,0.18);
   --text:        #e8eaf0;
-  --muted:       #6b7280;
+  --muted:       #a1a8b8;
   --tag-bg:      #1e2540;
 }
 
@@ -148,8 +148,7 @@ h1 {
   animation: fadeUp 0.7s ease 0.25s forwards;
 }
 h1 .line2 {
-  color: transparent;
-  -webkit-text-stroke: 1.5px rgba(255,255,255,0.22);
+  color: rgba(255,255,255,0.65);
 }
 .hero-bio {
   max-width: 500px;
@@ -161,7 +160,7 @@ h1 .line2 {
   opacity: 0;
   animation: fadeUp 0.7s ease 0.4s forwards;
 }
-.hero-bio strong { color: rgba(232,234,240,0.85); font-weight: 500; }
+.hero-bio strong { color: var(--text); font-weight: 500; }
 .hero-cta {
   display: flex;
   gap: 14px;
@@ -289,7 +288,7 @@ h2 {
   line-height: 1.85;
   margin-bottom: 20px;
 }
-.about-text p strong { color: rgba(232,234,240,0.85); font-weight: 500; }
+.about-text p strong { color: var(--text); font-weight: 500; }
 .skills-strip {
   display: flex;
   flex-wrap: wrap;
@@ -449,7 +448,7 @@ h2 {
   font-family: 'Syne', sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
-  color: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.4);
   letter-spacing: 0.1em;
 }
 .pd-body {
