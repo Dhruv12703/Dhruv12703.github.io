@@ -1,49 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dhruv | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhruv Mehta — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Dhruv Mehta</h1>
-  <p>Data Analyst | Business Analytics</p>
-</header>
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">DM<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:dhruvmehta360@gmail.com" class="nav-cta">Hire Me</a>
+</nav>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    I am a recent graduate with a background in Information Systems and
-    Supply Chain Management. I enjoy working with data and building projects.
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-orb"></div>
+  <span class="hero-label">Data Analyst · Business Analytics</span>
+  <h1>
+    Dhruv<br>
+    <span class="line2">Mehta</span>
+  </h1>
+  <p class="hero-bio">
+    Recent graduate with a background in <strong>Information Systems</strong> and
+    <strong>Supply Chain Management</strong>. I turn raw data into clarity — building
+    dashboards, models, and tools that actually tell a story.
   </p>
-</section>
-
-<section>
-  <h2>Projects</h2>
-
-  <div class="project-card">
-    <h3>Python Game</h3>
-    <p>A game built using Python to practice logic and problem solving.</p>
-    <a href="projects.html">View Project</a>
-
-    <h3>BMW Sales Dashboard (Power BI)</h3>
-    <p>Power BI dashboard with revenue trends, top models, and pricing insights.</p>
-    <a href="projects/bmw-sales.html">View details</a>
-
-    <h3>Global Inflation Analysis Dashboard (Tableau)</h3>
-    <p>Interactive Tableau dashboard analyzing global inflation trends, top countries, and inflation distribution using World Bank CPI data.</p>
-    <a href="https://public.tableau.com/views/TableauProject_17694954229630/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">View Tableau Dashboard</a>
+  <div class="hero-cta">
+    <a href="#projects" class="btn-primary">
+      View Projects
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="#contact" class="btn-secondary">Get in Touch</a>
   </div>
+</div>
 
+<div class="divider-line"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-label">About Me</span>
+    <h2>Turning Data<br>Into Decisions</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm a data analyst passionate about finding the signal in the noise. My work spans from building <strong>interactive BI dashboards</strong> to writing Python scripts and analyzing real-world datasets from global financial institutions.</p>
+      <p>With a foundation in <strong>Information Systems and Supply Chain Management</strong>, I approach problems with both a technical and business lens — asking not just "what does the data say?" but "what should we do about it?"</p>
+      <div class="skills-strip">
+        <span class="skill-chip">Python</span>
+        <span class="skill-chip">Power BI</span>
+        <span class="skill-chip">Tableau</span>
+        <span class="skill-chip">SQL</span>
+        <span class="skill-chip">Excel</span>
+        <span class="skill-chip">Data Visualization</span>
+        <span class="skill-chip">Supply Chain</span>
+        <span class="skill-chip">Business Analytics</span>
+        <span class="skill-chip">Information Systems</span>
+      </div>
+    </div>
+    <div class="stats-grid reveal">
+      <div class="stat-card">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">2</div>
+        <div class="stat-label">BI Tools</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">IS</div>
+        <div class="stat-label">Info Systems</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">SCM</div>
+        <div class="stat-label">Supply Chain</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: dhruvmehta360@gmail.com</p>
-  <p>GitHub: github.com/Dhruv12703</p>
+<div class="divider-line"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-label">Projects</span>
+    <h2>Things I've<br>Built &amp; Analyzed</h2>
+  </div>
+  <div class="projects-grid">
+
+    <a class="project-card reveal" href="projects.html">
+      <span class="card-arrow">↗</span>
+      <div class="card-icon icon-blue">🐍</div>
+      <span class="card-tag tag-blue">Python</span>
+      <h3>Python Game</h3>
+      <p>A logic-based game built in Python to practice algorithmic thinking, loops, and user input through interactive gameplay.</p>
+    </a>
+
+    <a class="project-card reveal" href="projects/bmw-sales.html">
+      <span class="card-arrow">↗</span>
+      <div class="card-icon icon-yellow">📊</div>
+      <span class="card-tag tag-yellow">Power BI</span>
+      <h3>BMW Sales Dashboard</h3>
+      <p>Interactive Power BI dashboard analyzing BMW sales by year, region, and model from 2010–2024 with revenue trends and pricing insights.</p>
+    </a>
+
+    <a class="project-card reveal" href="https://public.tableau.com/views/TableauProject_17694954229630/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
+      <span class="card-arrow">↗</span>
+      <div class="card-icon icon-cyan">🌐</div>
+      <span class="card-tag tag-cyan">Tableau</span>
+      <h3>Global Inflation Analysis</h3>
+      <p>Tableau dashboard analyzing global inflation trends, top affected countries, and CPI distribution using World Bank data. Interactive and data-rich.</p>
+    </a>
+
+  </div>
+  <div class="projects-footer reveal">
+    <a href="projects.html" class="btn-secondary">
+      See All Projects
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
 </section>
 
+<div class="divider-line"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner reveal">
+    <span class="section-label" style="justify-content:center">Contact</span>
+    <h2>Open to Opportunities</h2>
+    <p>Whether it's a full-time role, internship, or just a conversation about data — I'd love to hear from you.</p>
+    <div class="contact-links">
+      <a href="mailto:dhruvmehta360@gmail.com" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+        dhruvmehta360@gmail.com
+      </a>
+      <a href="https://github.com/Dhruv12703" class="btn-secondary" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        github.com/Dhruv12703
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2026 Dhruv Mehta</span>
+  <span>Data Analyst · Business Analytics</span>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        entry.target.style.transitionDelay = (i * 0.08) + 's';
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
